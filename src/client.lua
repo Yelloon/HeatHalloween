@@ -73,13 +73,6 @@ end
 Citizen.CreateThread(function()
     src:spawnObjects()
     while true do
-        src:checkCooldown()
-        Wait(1000)
-    end
-end)
-
-Citizen.CreateThread(function()
-    while true do
         local sleep = 1000
         local ped = PlayerPedId()
         local pedCoords = GetEntityCoords(ped)
